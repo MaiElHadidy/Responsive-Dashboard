@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Mai ElHadidy">
+  <meta name="description" content="A responsive dashboard assignment">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" ><img src="img/disney_logo.png" alt="logo" style="width: 80px"></a>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">        
+            <li data-toggle="collapse" data-target="#dashboard" class="collapsed">
+                <a href="#"><i class="fa fa-tachometer-alt fa-sl"></i> Dashboard <i class="fa fa-angle-right arrow-toggle"></i></span></a>
+            </li>
+            <ul class="sub-menu collapse" id="dashboard">
+                <li><a href="#">Dashboard 1</a></li>
+                <li><a href="#">Dashboard 2</a></li>
+                <li><a href="#">Dashboard 3</a></li>
+                <li data-toggle="collapse" data-target="#skins" class="collapsed">
+                    <a href="#">Skins <i class="fa fa-angle-right arrow-toggle"></i></span></a></li>
+                    <ul class="sub-menu collapse" id="skins">
+                        <li><a href="#">Skin 1</a></li>
+                        <li><a href="#">Skin 2</a></li>
+                        <li><a href="#">Skin 3</a></li>
+                        <li><a href="#">Skin 4</a></li>
+                    </ul>
+                <li><a href="#"> What's New <span class="badge whats-new">v2.1</span></a></li>
+            </ul>
+            <li data-toggle="collapse" data-target="#layouts" class="collapsed">
+                <a href="#"><i class="fa fa-th-large fa-sl"></i> Layouts <i class="fa fa-angle-right arrow-toggle"></i></a>
+            </li>
+            <ul class="sub-menu collapse" id="layouts">
+                <li class="active"><a href="#">Layout1</a></li>
+                <li><a href="#">Layout 2</a></li>
+                <li><a href="#">Layout 3</a></li>
+            </ul>
+
+            <li><a href="#"><i class="fa fa-desktop fa-sl"></i> Frontend</a></li>
+
+            <li data-toggle="collapse" data-target="#ui-elements" class="collapsed">
+                <a class="menu-dropdown"href="#"><i class="fa fa-file-alt fa-sl"></i> UI Elements <i class="fa fa-angle-right arrow-toggle"></i></span></a>
+            </li>
+            <ul class="sub-menu collapse" id="ui-elements">
+                <li class="active"><a href="#">UI Element 1</a></li>
+                <li><a href="#">UI Element 2</a></li>
+                <li><a href="#">UI Element 3</a></li>
+            </ul>
+
+            <li data-toggle="collapse" data-target="#mailbox" class="collapsed">
+                <a href="#"><i class="fa fa-envelope fa-sl"></i> Mailbox <span class="badge mailbox-badge">8</span> <i class="fa fa-angle-right arrow-toggle"></i></span></a>
+            </li>
+            <ul class="sub-menu collapse" id="mailbox">
+                <li class="active"><a href="#">Mailbox 1</a></li>
+                <li><a href="#"> Mailbox 2</a></li>
+                <li><a href="#"> Mailbox 3</a></li>
+            </ul>
+
+            <li data-toggle="collapse" data-target="#forms" class="collapsed">
+                <a href="#"><i class="fa fa-file-alt fa-sl"></i> Forms <i class="fa fa-angle-right arrow-toggle"></i></a>
+            </li>
+            <ul class="sub-menu collapse" id="forms">
+                <li class="active"><a href="#">Form 1</a></li>
+                <li><a href="#"> Form 2</a></li>
+                <li><a href="#">Form 3</a></li>
+            </ul>
+
+            <li data-toggle="collapse" data-target="#tables" class="collapsed">
+                <a href="#"><i class="fa fa-table fa-sl"></i> Tables <i class="fa fa-angle-right arrow-toggle"></i></a>
+            </li>
+            <ul class="sub-menu collapse" id="tables">
+                <li class="active"><a href="#">Table 1</a></li>
+                <li><a href="#">Table 2</a></li>
+                <li><a href="#">Table 3</a></li>
+                <li><a href="#"> What's New <span class="badge badge-primary badge-pill">2</span></a></li>
+            </ul>
+
+            <li data-toggle="collapse" data-target="#extra" class="collapsed">
+                <a href="#"><i class="fa fa-box fa-sl"></i> Extra <span class="badge extra-badge">New Items</span><i class="fa fa-angle-right arrow-toggle"></i></span></a>
+            </li>
+            <ul class="sub-menu collapse" id="extra">
+                <li class="active"><a href="#">Extra 1</a></li>
+                <li><a href="#">Extra 2</a></li>
+                <li><a href="#">Extra 3</a></li>
+            </ul>
+
+            <li><a href="#"><i class="fa fa-chart-bar fa-sl"></i> Charts</a></li>
+
+
+            <li data-toggle="collapse" data-target="#menu-levels" class="collapsed">
+                <a href="#"><i class="fa fa-code-branch fa-sl"></i> Menu Levels <i class="fa fa-angle-right arrow-toggle"></i></a>
+            </li>
+            <ul class="sub-menu collapse" id="menu-levels">
+                <li class="active"><a href="#">Menu level 1</a></li>
+                <li><a href="#">Menu level 2</a></li>
+                <li><a href="#">Menu level 3</a></li>
+            </ul>
+      </ul>
+    </div>
+
+
+  
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <a href="#" ><img src="img/disney_logo.png" alt="logo" style="width: 120px"></a>
+      <!--<a href="#" class="menu-button"><i class="fa fa-bars fa-sl"></i></a>-->
+      <ul class="nav nav-pills nav-stacked">
+            <!--Dashboard-->
+            <li data-toggle="collapse" data-target="#dashboard-l" class="collapsed">
+                <a href="#"><i class="fa fa-tachometer-alt fa-sl"></i> Dashboard <i class="fa fa-angle-right arrow-toggle"></i></span></a>
+            </li>
+            <ul class="sub-menu collapse" id="dashboard-l">
+                <li><a href="#">Dashboard 1</a></li>
+                <li><a href="#">Dashboard 2</a></li>
+                <li><a href="#">Dashboard 3</a></li>
+                <li data-toggle="collapse" data-target="#skins-l" class="collapsed">
+                    <a href="#">Skins <i class="fa fa-angle-right arrow-toggle"></i></span></a></li>
+                    <ul class="sub-menu collapse" id="skins-l">
+                        <li><a href="#">Skin 1</a></li>
+                        <li><a href="#">Skin 2</a></li>
+                        <li><a href="#">Skin 3</a></li>
+                        <li><a href="#">Skin 4</a></li>
+                    </ul>
+                <li><a href="#"> What's New <span class="badge whats-new">v2.1</span></a></li>
+            </ul>
+            <!--Layouts-->
+            <li data-toggle="collapse" data-target="#layouts-l" class="collapsed">
+                <a href="#"><i class="fa fa-th-large fa-sl"></i> Layouts <i class="fa fa-angle-right arrow-toggle"></i></a>
+            </li>
+            <ul class="sub-menu collapse" id="layouts-l">
+                <li class="active"><a href="#">Layout1</a></li>
+                <li><a href="#">Layout 2</a></li>
+                <li><a href="#">Layout 3</a></li>
+            </ul>
+
+            <!--Frontend-->
+            <li><a href="#"><i class="fa fa-desktop fa-sl"></i> Frontend</a></li>
+
+            <!--UI Elements-->
+            <li data-toggle="collapse" data-target="#ui-elements-l" class="collapsed">
+                <a class="menu-dropdown"href="#"><i class="fa fa-file-alt fa-sl"></i> UI Elements <i class="fa fa-angle-right arrow-toggle"></i></span></a>
+            </li>
+            <ul class="sub-menu collapse" id="ui-elements-l">
+                <li class="active"><a href="#">UI Element 1</a></li>
+                <li><a href="#">UI Element 2</a></li>
+                <li><a href="#">UI Element 3</a></li>
+            </ul>
+
+            <!--Mailbox-->
+            <li data-toggle="collapse" data-target="#mailbox-l" class="collapsed">
+                <a href="#"><i class="fa fa-envelope fa-sl"></i> Mailbox <span class="badge mailbox-badge">8</span> <i class="fa fa-angle-right arrow-toggle"></i></span></a>
+            </li>
+            <ul class="sub-menu collapse" id="mailbox-l">
+                <li class="active"><a href="#">Mailbox 1</a></li>
+                <li><a href="#"> Mailbox 2</a></li>
+                <li><a href="#"> Mailbox 3</a></li>
+            </ul>
+
+            <!--Forms-->
+            <li data-toggle="collapse" data-target="#forms-l" class="collapsed">
+                <a href="#"><i class="fa fa-file-alt fa-sl"></i> Forms <i class="fa fa-angle-right arrow-toggle"></i></a>
+            </li>
+            <ul class="sub-menu collapse" id="forms-l">
+                <li class="active"><a href="#">Form 1</a></li>
+                <li><a href="#"> Form 2</a></li>
+                <li><a href="#">Form 3</a></li>
+            </ul>
+
+            <!--Tables-->
+            <li data-toggle="collapse" data-target="#tables-l" class="collapsed">
+                <a href="#"><i class="fa fa-table fa-sl"></i> Tables <i class="fa fa-angle-right arrow-toggle"></i></a>
+            </li>
+            <ul class="sub-menu collapse" id="tables-l">
+                <li class="active"><a href="#">Table 1</a></li>
+                <li><a href="#">Table 2</a></li>
+                <li><a href="#">Table 3</a></li>
+                <li><a href="#"> What's New <span class="badge badge-primary badge-pill">2</span></a></li>
+            </ul>
+
+            <!--Extra-->
+            <li data-toggle="collapse" data-target="#extra-l" class="collapsed">
+                <a href="#"><i class="fa fa-box fa-sl"></i> Extra <span class="badge extra-badge">New Items</span><i class="fa fa-angle-right arrow-toggle"></i></span></a>
+            </li>
+            <ul class="sub-menu collapse" id="extra-l">
+                <li class="active"><a href="#">Extra 1</a></li>
+                <li><a href="#">Extra 2</a></li>
+                <li><a href="#">Extra 3</a></li>
+            </ul>
+
+            <!--Charts-->
+            <li><a href="#"><i class="fa fa-chart-bar fa-sl"></i> Charts</a></li>
+
+            <!--Menu Levels-->
+            <li data-toggle="collapse" data-target="#menu-levels-l" class="collapsed">
+                <a href="#"><i class="fa fa-code-branch fa-sl"></i> Menu Levels <i class="fa fa-angle-right arrow-toggle"></i></a>
+            </li>
+            <ul class="sub-menu collapse" id="menu-levels-l">
+                <li class="active"><a href="#">Menu level 1</a></li>
+                <li><a href="#">Menu level 2</a></li>
+                <li><a href="#">Menu level 3</a></li>
+            </ul>
+      </ul>
+    </div>
+   
+    
+    <div class="col-sm-9">
+      <header class="row">
+        <div class="col-sm-6 header-right"> 
+          <h5>Language</h5>
+          <a href="#"><img class="language-image" src="img/english_lang.png" alt="English Language"></a>
+          <a href="#"><i class="fa fa-comments"></i>Chats<span class="badge comments-badge">8</span></a> 
+          <a href="#">Log Out<i class="fa fa-sign-out-alt"></i></a> 
+        </div>
+        <div class="col-sm-6 header-left">
+            <a href="#"><img src="img/profile_picture.png" alt="Profile Picture"></a>
+            <h5>John Henderson</h5>
+            <a href="" class="badges badge1" data-badge="6"><i class="fa fa-exclamation-triangle"></i></a>
+            <a href="" class="badges badge2" data-badge="10"><i class="fa fa-envelope"></i></a>
+            <a href="" class="badges badge3" data-badge="1"><i class="fa fa-list"></i></a>
+      </div>
+      
+      </header>
+      <div class="row cards-row">
+        <div class="col-sm-3">
+          <div class="card bg-dark text-white" id="card-1">
+            <i class=" card-img fas fa-users fa-6x"></i>
+            <div class="card-img-overlay">
+              <h4 class="card-title">83</h4>
+              <h5 class="card-text">Registered Users</h5>
+              <p class="card-text">so far in our blog, and our website. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card bg-dark text-white" id="card-2">
+              <i class=" card-img fas fa-signal fa-6x"></i>
+              <div class="card-img-overlay">
+                <h4 class="card-title">135</h4>
+                <h5 class="card-text">Daily Visitors</h5>
+                <p class="card-text">this is the average value </p>
+              </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card bg-dark text-white" id="card-3">
+              <i class=" card-img fas fa-envelope fa-6x"></i>
+              <div class="card-img-overlay">
+                <h4 class="card-title">23</h4>
+                <h5 class="card-text">New Messages</h5>
+                <p class="card-text">messages per day. </p>
+              </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card bg-dark text-white" id="card-4">
+              <i class=" card-img fas fa-rss fa-6x"></i>
+              <div class="card-img-overlay">
+                <h4 class="card-title">52</h4>
+                <h5 class="card-text">Subscribers</h5>
+                <p class="card-text">on our site right now. </p>
+              </div>
+            </div>
+      </div>
+    </div>
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="card text-center">
+            <div class="card-header">
+              <h5>Site Stats</h5>
+              <ul class="nav nav-tabs justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link " href="#">Area Charts</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Line Chart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pie Chart</a>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="card-body">
+              <div id="curve_chart" style="width: 100%; height: 250px"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-5">
+            <div id="chart_div" style="width: 100%; height: 300px;"></div>
+          </div>
+        </div>
+
+
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="bars-chart">
+            <i class="fas fa-signal fa-6x"></i>
+            <i class="fas fa-signal fa-6x fa-flip-horizontal"></i>
+          </div>
+          <div class="bars-chart-header">
+            <p>Monthly Sales</p>
+          </div>
+        </div>
+        <div class="col-sm-7">
+            <table class="table profiles-table">
+              <caption>Latest updated Profiles</caption>
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Activity</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td><i class="fas fa-signal fa-1x" style="color:#ff5f62"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td><i class="fas fa-signal fa-1x" style="color:#405982"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td><i class="fas fa-signal fa-1x" style="color:#00b09c"></i></td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+
+            <div class="tasks-card">
+              <div class="card-header">Tasks</div>
+              <a href="#"><i class="fas fa-list"></i></a>
+              <div class="card-body">
+                <h5 class="card-title">To do list, tick one.</h5>
+                <input type="text" class="form-control" id="add-task" placeholder="Add Task">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Website Design
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                  <label class="form-check-label" for="defaultCheck2">
+                    Slicing
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Wordpress Integration
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                  <label class="form-check-label" for="defaultCheck2">
+                    SEO Optimize
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                  <label class="form-check-label" for="defaultCheck2">
+                    Minify & Compress
+                  </label>
+                </div>
+                <div class="tasks-card-footer"><a href="#">View all tasks</a></div>
+
+              </div>
+            </div> 
+
+        </div>
+        <div class="col-sm-8">
+
+            <div id="regions_div" style="width: 100%; height: 410px;"></div> 
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
+
